@@ -25,6 +25,7 @@ var settings = map[string]string{
 	"ldflags":           "",
 	"build_name":        "runner-build",
 	"build_log":         "runner-build-errors.log",
+	"build_root":        ".",
 	"valid_ext":         ".go, .tpl, .tmpl, .html",
 	"no_rebuild_ext":    ".tpl, .tmpl, .html",
 	"ignored":           "assets, tmp",
@@ -136,6 +137,10 @@ func buildPath() string {
 		p += ".exe"
 	}
 	return p
+}
+
+func buildRoot() string {
+	return settings["build_root"]
 }
 
 func buildErrorsFileName() string {

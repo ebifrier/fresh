@@ -10,11 +10,11 @@ import (
 func build() (string, bool) {
 	buildLog("Building...")
 	buildLog("options: -gcflags=%s -ldflags=%s -o=%s %s",
-		gcflags(), ldflags(), buildPath(), root())
+		gcflags(), ldflags(), buildPath(), buildRoot())
 
 	cmd := exec.Command(
 		"go", "build", "-gcflags", gcflags(), "-ldflags", ldflags(),
-		"-o", buildPath(), root())
+		"-o", buildPath(), buildRoot())
 
 	stderr, err := cmd.StderrPipe()
 	if err != nil {

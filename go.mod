@@ -1,4 +1,4 @@
-module github.com/ebifrier/fresh
+module github.com/ebifrier/fresh2
 
 go 1.17
 

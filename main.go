@@ -17,7 +17,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/ebifrier/fresh/runner"
+	"github.com/ebifrier/fresh2/runner"
 )
 
 func main() {

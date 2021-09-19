@@ -2,7 +2,7 @@
 
 .DS_Store
 tmp
-/fresh
+/fresh2
 /runner.conf.dev
 
 *.o

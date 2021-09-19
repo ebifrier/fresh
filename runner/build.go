@@ -9,7 +9,7 @@ import (
 
 func build() (string, bool) {
 	buildLog("Building...")
-	buildLog("options: -gcflags=%s -ldflags=%s -o=%s %s",
+	buildLog("options: -gcflags=%s -ldflags=%s -o=%s test_%s",
 		gcflags(), ldflags(), buildPath(), buildRoot())
 
 	cmd := exec.Command(
